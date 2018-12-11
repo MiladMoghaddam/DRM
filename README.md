@@ -18,9 +18,7 @@ For more information please take a look at the following papers:
 -------------------------------------------------------------------------------------
 Developed by: Milad Ghorbani Moghaddam, Dr. Cristinel Ababei
 
-milad.ghorbanimoghaddam@marquette.edu
-
-cristinel.ababei@marquette.edu
+milad.ghorbanimoghaddam@marquette.edu, cristinel.ababei@marquette.edu
 
 Marquette University
 
