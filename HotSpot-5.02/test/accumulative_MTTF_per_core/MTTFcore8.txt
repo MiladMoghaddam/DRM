@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 08_l2_left | Total failures: 5759 | Failure percentage: 5.7590
+Block name: 08_l2_right | Total failures: 8041 | Failure percentage: 8.0410
+Block name: 08_l2_bottom | Total failures: 70070 | Failure percentage: 70.0700
+Block name: 08_router | Total failures: 14018 | Failure percentage: 14.0180
+Block name: 08_icache | Total failures: 585 | Failure percentage: 0.5850
+Block name: 08_dcache | Total failures: 678 | Failure percentage: 0.6780
+Block name: 08_branchpred | Total failures: 2 | Failure percentage: 0.0020
+Block name: 08_pc | Total failures: 38 | Failure percentage: 0.0380
+Block name: 08_mbox | Total failures: 65 | Failure percentage: 0.0650
+Block name: 08_dtb1 | Total failures: 57 | Failure percentage: 0.0570
+Block name: 08_dtb2 | Total failures: 43 | Failure percentage: 0.0430
+Block name: 08_rbroadcast | Total failures: 128 | Failure percentage: 0.1280
+Block name: 08_itb | Total failures: 12 | Failure percentage: 0.0120
+Block name: 08_intexec1 | Total failures: 17 | Failure percentage: 0.0170
+Block name: 08_intexec2 | Total failures: 24 | Failure percentage: 0.0240
+Block name: 08_intexec3 | Total failures: 35 | Failure percentage: 0.0350
+Block name: 08_intexec4 | Total failures: 11 | Failure percentage: 0.0110
+Block name: 08_rfile1 | Total failures: 25 | Failure percentage: 0.0250
+Block name: 08_rfile2 | Total failures: 20 | Failure percentage: 0.0200
+Block name: 08_intmap | Total failures: 51 | Failure percentage: 0.0510
+Block name: 08_intq1 | Total failures: 3 | Failure percentage: 0.0030
+Block name: 08_intq2 | Total failures: 12 | Failure percentage: 0.0120
+Block name: 08_intq3 | Total failures: 47 | Failure percentage: 0.0470
+Block name: 08_l2int | Total failures: 66 | Failure percentage: 0.0660
+Block name: 08_ldst1 | Total failures: 23 | Failure percentage: 0.0230
+Block name: 08_ldst2 | Total failures: 31 | Failure percentage: 0.0310
+Block name: 08_fpmap | Total failures: 27 | Failure percentage: 0.0270
+Block name: 08_fpq | Total failures: 32 | Failure percentage: 0.0320
+Block name: 08_fpmul | Total failures: 31 | Failure percentage: 0.0310
+Block name: 08_fpreg | Total failures: 22 | Failure percentage: 0.0220
+Block name: 08_fpadd | Total failures: 17 | Failure percentage: 0.0170
+Block name: 08_fpdiv | Total failures: 10 | Failure percentage: 0.0100
+SoC final MTTF: 2.394211e-03

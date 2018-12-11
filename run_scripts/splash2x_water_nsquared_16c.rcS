@@ -1,0 +1,12 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/water_nsquared
+echo "Running water_nsquared now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./water_nsquared < input16
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "water_nsquared Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 switchcpu
+/sbin/m5 exit

@@ -1,0 +1,11 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/lu_cb
+echo "Running lu_cb now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./lu_cb -p64 -n1024
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "lu_cb Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 exit

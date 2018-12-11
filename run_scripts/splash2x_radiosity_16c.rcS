@@ -1,0 +1,11 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/radiosity
+echo "Running radiosity now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./radiosity -bf 1.5e-1 -batch -room -p 16
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "radiosity Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 exit

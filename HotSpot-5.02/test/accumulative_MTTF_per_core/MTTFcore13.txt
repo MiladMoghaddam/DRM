@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 13_l2_left | Total failures: 6122 | Failure percentage: 6.1220
+Block name: 13_l2_right | Total failures: 6047 | Failure percentage: 6.0470
+Block name: 13_l2_bottom | Total failures: 75360 | Failure percentage: 75.3600
+Block name: 13_router | Total failures: 10737 | Failure percentage: 10.7370
+Block name: 13_icache | Total failures: 547 | Failure percentage: 0.5470
+Block name: 13_dcache | Total failures: 544 | Failure percentage: 0.5440
+Block name: 13_branchpred | Total failures: 1 | Failure percentage: 0.0010
+Block name: 13_pc | Total failures: 32 | Failure percentage: 0.0320
+Block name: 13_mbox | Total failures: 37 | Failure percentage: 0.0370
+Block name: 13_dtb1 | Total failures: 47 | Failure percentage: 0.0470
+Block name: 13_dtb2 | Total failures: 33 | Failure percentage: 0.0330
+Block name: 13_rbroadcast | Total failures: 125 | Failure percentage: 0.1250
+Block name: 13_itb | Total failures: 14 | Failure percentage: 0.0140
+Block name: 13_intexec1 | Total failures: 9 | Failure percentage: 0.0090
+Block name: 13_intexec2 | Total failures: 19 | Failure percentage: 0.0190
+Block name: 13_intexec3 | Total failures: 17 | Failure percentage: 0.0170
+Block name: 13_intexec4 | Total failures: 5 | Failure percentage: 0.0050
+Block name: 13_rfile1 | Total failures: 15 | Failure percentage: 0.0150
+Block name: 13_rfile2 | Total failures: 19 | Failure percentage: 0.0190
+Block name: 13_intmap | Total failures: 22 | Failure percentage: 0.0220
+Block name: 13_intq1 | Total failures: 4 | Failure percentage: 0.0040
+Block name: 13_intq2 | Total failures: 7 | Failure percentage: 0.0070
+Block name: 13_intq3 | Total failures: 15 | Failure percentage: 0.0150
+Block name: 13_l2int | Total failures: 52 | Failure percentage: 0.0520
+Block name: 13_ldst1 | Total failures: 19 | Failure percentage: 0.0190
+Block name: 13_ldst2 | Total failures: 23 | Failure percentage: 0.0230
+Block name: 13_fpmap | Total failures: 24 | Failure percentage: 0.0240
+Block name: 13_fpq | Total failures: 33 | Failure percentage: 0.0330
+Block name: 13_fpmul | Total failures: 22 | Failure percentage: 0.0220
+Block name: 13_fpreg | Total failures: 21 | Failure percentage: 0.0210
+Block name: 13_fpadd | Total failures: 14 | Failure percentage: 0.0140
+Block name: 13_fpdiv | Total failures: 14 | Failure percentage: 0.0140
+SoC final MTTF: 2.581751e-03

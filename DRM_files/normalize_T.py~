@@ -1,0 +1,41 @@
+READ_FILE = open("./T_NotNormalized.steady", 'r')
+WRITE_FILE = open("./T.steady", 'w')
+
+for line in READ_FILE:
+	l=line.split("\t")	
+	if l[0]=="\n":
+		WRITE_FILE.write("\n")		
+	else: 
+		WRITE_FILE.write("%s\t%s\n"%(l[0],(float(l[1])-300)*5-70+300))
+
+
+READ_FILE = open("./grid_NotNormalized.steady", 'r')
+WRITE_FILE = open("./grid.steady", 'w')
+
+for line in READ_FILE:
+	l=line.split("\t")	
+	if l[0]=="\n":
+		WRITE_FILE.write("\n")		
+	else: 
+		WRITE_FILE.write("%s\t%s\n"%(l[0],(float(l[1])-300)*5-70+300))
+
+READ_FILE = open("./accumulative_T_NotNormalized.steady", 'r')
+WRITE_FILE = open("./accumulative_T.steady", 'w')
+
+for line in READ_FILE:
+	l=line.split("\t")	
+	if l[0]=="\n":
+		WRITE_FILE.write("\n")		
+	else: 
+		WRITE_FILE.write("%s\t%s\n"%(l[0],(float(l[1])-300)*5-70+300))
+
+
+READ_FILE = open("./accumulative_grid_NotNormalized.steady", 'r')
+WRITE_FILE = open("./accumulative_grid.steady", 'w')
+
+for line in READ_FILE:
+	l=line.split("\t")	
+	if l[0]=="\n":
+		WRITE_FILE.write("\n")		
+	else: 
+		WRITE_FILE.write("%s\t%s\n"%(l[0],(float(l[1])-300)*5-70+300))

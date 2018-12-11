@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 07_l2_left | Total failures: 8727 | Failure percentage: 8.7270
+Block name: 07_l2_right | Total failures: 6398 | Failure percentage: 6.3980
+Block name: 07_l2_bottom | Total failures: 66627 | Failure percentage: 66.6270
+Block name: 07_router | Total failures: 16066 | Failure percentage: 16.0660
+Block name: 07_icache | Total failures: 671 | Failure percentage: 0.6710
+Block name: 07_dcache | Total failures: 602 | Failure percentage: 0.6020
+Block name: 07_branchpred | Total failures: 4 | Failure percentage: 0.0040
+Block name: 07_pc | Total failures: 45 | Failure percentage: 0.0450
+Block name: 07_mbox | Total failures: 50 | Failure percentage: 0.0500
+Block name: 07_dtb1 | Total failures: 56 | Failure percentage: 0.0560
+Block name: 07_dtb2 | Total failures: 47 | Failure percentage: 0.0470
+Block name: 07_rbroadcast | Total failures: 162 | Failure percentage: 0.1620
+Block name: 07_itb | Total failures: 13 | Failure percentage: 0.0130
+Block name: 07_intexec1 | Total failures: 11 | Failure percentage: 0.0110
+Block name: 07_intexec2 | Total failures: 21 | Failure percentage: 0.0210
+Block name: 07_intexec3 | Total failures: 32 | Failure percentage: 0.0320
+Block name: 07_intexec4 | Total failures: 8 | Failure percentage: 0.0080
+Block name: 07_rfile1 | Total failures: 25 | Failure percentage: 0.0250
+Block name: 07_rfile2 | Total failures: 22 | Failure percentage: 0.0220
+Block name: 07_intmap | Total failures: 45 | Failure percentage: 0.0450
+Block name: 07_intq1 | Total failures: 5 | Failure percentage: 0.0050
+Block name: 07_intq2 | Total failures: 14 | Failure percentage: 0.0140
+Block name: 07_intq3 | Total failures: 32 | Failure percentage: 0.0320
+Block name: 07_l2int | Total failures: 79 | Failure percentage: 0.0790
+Block name: 07_ldst1 | Total failures: 45 | Failure percentage: 0.0450
+Block name: 07_ldst2 | Total failures: 33 | Failure percentage: 0.0330
+Block name: 07_fpmap | Total failures: 34 | Failure percentage: 0.0340
+Block name: 07_fpq | Total failures: 37 | Failure percentage: 0.0370
+Block name: 07_fpmul | Total failures: 21 | Failure percentage: 0.0210
+Block name: 07_fpreg | Total failures: 19 | Failure percentage: 0.0190
+Block name: 07_fpadd | Total failures: 32 | Failure percentage: 0.0320
+Block name: 07_fpdiv | Total failures: 17 | Failure percentage: 0.0170
+SoC final MTTF: 2.329832e-03

@@ -1,0 +1,11 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/radix
+echo "Running radix now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./radix -p16 -r4096 -n4194304 -m2147483647
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "radix Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 exit

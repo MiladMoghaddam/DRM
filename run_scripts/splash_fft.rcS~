@@ -1,0 +1,11 @@
+#!/bin/sh
+cd benchmarks
+echo "Running FFT now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./FFT -t -p1
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "FFT Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 exit

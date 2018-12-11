@@ -1,0 +1,309 @@
+Alpha21364.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Alpha21364.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+array.cc:#include "area.h"
+array.cc:#include "decoder.h"
+array.cc:#include "parameter.h"
+array.cc:#include "array.h"
+array.cc:#include <iostream>
+array.cc:#include <math.h>
+array.cc:#include <assert.h>
+array.cc:#include "globalvar.h"
+array.h:#include "basic_components.h"
+array.h:#include "const.h"
+array.h:#include "cacti_interface.h"
+array.h:#include "parameter.h"
+array.h:#include "component.h"
+array.h:#include <iostream>
+array.h:#include <string>
+basic_components.cc:#include "basic_components.h"
+basic_components.cc:#include <iostream>
+basic_components.cc:#include <assert.h>
+basic_components.cc:#include <cmath>
+basic_components.h:#include "XML_Parse.h"
+basic_components.h:#include "parameter.h"
+basic_components.h:#include <vector>
+core.cc:#include "io.h"
+core.cc:#include "parameter.h"
+core.cc:#include "const.h"
+core.cc:#include "basic_circuit.h"
+core.cc:#include <iostream>
+core.cc:#include <algorithm>
+core.cc:#include "XML_Parse.h"
+core.cc:#include <string>
+core.cc:#include <cmath>
+core.cc:#include <assert.h>
+core.cc:#include "core.h"
+core.cc://#include "globalvar.h"
+core.cc:	 * The Branch predictor also includes a RAS (return address stack) for function calls
+core.cc~:#include "io.h"
+core.cc~:#include "parameter.h"
+core.cc~:#include "const.h"
+core.cc~:#include "basic_circuit.h"
+core.cc~:#include <iostream>
+core.cc~:#include <algorithm>
+core.cc~:#include "XML_Parse.h"
+core.cc~:#include <string>
+core.cc~:#include <cmath>
+core.cc~:#include <assert.h>
+core.cc~:#include "core.h"
+core.cc~://#include "globalvar.h"
+core.cc~:	 * The Branch predictor also includes a RAS (return address stack) for function calls
+core.h:#include "XML_Parse.h"
+core.h:#include "logic.h"
+core.h:#include "parameter.h"
+core.h:#include "array.h"
+core.h:#include "interconnect.h"
+core.h:#include "basic_components.h"
+core.h:#include "sharedcache.h"
+core.h~:#include "XML_Parse.h"
+core.h~:#include "logic.h"
+core.h~:#include "parameter.h"
+core.h~:#include "array.h"
+core.h~:#include "interconnect.h"
+core.h~:#include "basic_components.h"
+core.h~:#include "sharedcache.h"
+interconnect.cc:#include "interconnect.h"
+interconnect.cc:#include "wire.h"
+interconnect.cc:#include <assert.h>
+interconnect.cc:#include <iostream>
+interconnect.cc:#include "globalvar.h"
+interconnect.h:#include "basic_circuit.h"
+interconnect.h:#include "basic_components.h"
+interconnect.h:#include "component.h"
+interconnect.h:#include "parameter.h"
+interconnect.h:#include "assert.h"
+interconnect.h:#include "subarray.h"
+interconnect.h:#include "cacti_interface.h"
+interconnect.h:#include "wire.h"
+interconnect.h:// leakge power includes entire htree in a bank (when uca_tree == false)
+interconnect.h:// leakge power includes only part to one bank when uca_tree == true
+iocontrollers.cc:#include "io.h"
+iocontrollers.cc:#include "parameter.h"
+iocontrollers.cc:#include "const.h"
+iocontrollers.cc:#include "logic.h"
+iocontrollers.cc:#include "basic_circuit.h"
+iocontrollers.cc:#include <iostream>
+iocontrollers.cc:#include <algorithm>
+iocontrollers.cc:#include "XML_Parse.h"
+iocontrollers.cc:#include <string>
+iocontrollers.cc:#include <cmath>
+iocontrollers.cc:#include <assert.h>
+iocontrollers.cc:#include "iocontrollers.h"
+iocontrollers.cc:#include "basic_components.h"
+iocontrollers.cc:		  //Cadence ChipEstimate using 65nm the controller includes everything: the PHY, the data link and transaction layer
+iocontrollers.cc:		  //Cadence ChipEstimate using 65nm the controller includes everything: the PHY, the data link and transaction layer
+iocontrollers.h:#include "XML_Parse.h"
+iocontrollers.h:#include "parameter.h"
+iocontrollers.h://#include "io.h"
+iocontrollers.h:#include "array.h"
+iocontrollers.h://#include "Undifferentiated_Core_Area.h"
+iocontrollers.h:#include <vector>
+iocontrollers.h:#include "basic_components.h"
+logic.cc:#include "logic.h"
+logic.h:#include "const.h"
+logic.h:#include "component.h"
+logic.h:#include "basic_components.h"
+logic.h:#include "basic_circuit.h"
+logic.h:#include "cacti_interface.h"
+logic.h:#include "decoder.h"
+logic.h:#include "parameter.h"
+logic.h:#include "xmlParser.h"
+logic.h:#include "XML_Parse.h"
+logic.h:#include "arch_const.h"
+logic.h:#include <cstring>
+logic.h:#include <iostream>
+logic.h:#include <cmath>
+logic.h:#include <cassert>
+main.cc:#include "io.h"
+main.cc:#include <iostream>
+main.cc:#include "xmlParser.h"
+main.cc:#include "XML_Parse.h"
+main.cc:#include "processor.h"
+main.cc:#include "globalvar.h"
+main.cc:#include "version.h"
+main.cc~:#include "io.h"
+main.cc~:#include <iostream>
+main.cc~:#include "xmlParser.h"
+main.cc~:#include "XML_Parse.h"
+main.cc~:#include "processor.h"
+main.cc~:#include "globalvar.h"
+main.cc~:#include "version.h"
+Binary file mcpat matches
+memoryctrl.cc:#include "io.h"
+memoryctrl.cc:#include "parameter.h"
+memoryctrl.cc:#include "const.h"
+memoryctrl.cc:#include "logic.h"
+memoryctrl.cc:#include "basic_circuit.h"
+memoryctrl.cc:#include <iostream>
+memoryctrl.cc:#include <algorithm>
+memoryctrl.cc:#include "XML_Parse.h"
+memoryctrl.cc:#include <string>
+memoryctrl.cc:#include <cmath>
+memoryctrl.cc:#include <assert.h>
+memoryctrl.cc:#include "memoryctrl.h"
+memoryctrl.cc:#include "basic_components.h"
+memoryctrl.cc: * that includes the frontend as the DesignWare DDR2/DDR3-Lite memory controllers and the backend only
+memoryctrl.h:#include "XML_Parse.h"
+memoryctrl.h:#include "parameter.h"
+memoryctrl.h://#include "io.h"
+memoryctrl.h:#include "array.h"
+memoryctrl.h://#include "Undifferentiated_Core_Area.h"
+memoryctrl.h:#include <vector>
+memoryctrl.h:#include "basic_components.h"
+Niagara1_sharing_DC.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara1_sharing_DC.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Niagara1_sharing_SBT.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara1_sharing_SBT.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Niagara1_sharing_ST.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara1_sharing_ST.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Niagara1_sharing.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara1_sharing.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Niagara1.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara1.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Niagara2.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Niagara2.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+noc.cc:#include "io.h"
+noc.cc:#include "parameter.h"
+noc.cc:#include "const.h"
+noc.cc:#include "basic_circuit.h"
+noc.cc:#include <iostream>
+noc.cc:#include <algorithm>
+noc.cc:#include "XML_Parse.h"
+noc.cc:#include <string>
+noc.cc:#include <cmath>
+noc.cc:#include <assert.h>
+noc.cc:#include "noc.h"
+noc.h:#include "XML_Parse.h"
+noc.h:#include "logic.h"
+noc.h:#include "parameter.h"
+noc.h:#include "array.h"
+noc.h:#include "interconnect.h"
+noc.h:#include "basic_components.h"
+noc.h:#include "router.h"
+Penryn.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Penryn.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Penryn.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Penryn.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Penryn.xml~:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Penryn.xml~:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+Penryn.xml~:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Penryn.xml~:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+processor.cc:#include <string.h>
+processor.cc:#include <iostream>
+processor.cc:#include <stdio.h>
+processor.cc:#include <algorithm>
+processor.cc:#include <string.h>
+processor.cc:#include <cmath>
+processor.cc:#include <assert.h>
+processor.cc:#include <fstream>
+processor.cc:#include "parameter.h"
+processor.cc:#include "array.h"
+processor.cc:#include "const.h"
+processor.cc:#include "basic_circuit.h"
+processor.cc:#include "XML_Parse.h"
+processor.cc:#include "processor.h"
+processor.cc:#include "version.h"
+processor.cc~:#include <string.h>
+processor.cc~:#include <iostream>
+processor.cc~:#include <stdio.h>
+processor.cc~:#include <algorithm>
+processor.cc~:#include <string.h>
+processor.cc~:#include <cmath>
+processor.cc~:#include <assert.h>
+processor.cc~:#include <fstream>
+processor.cc~:#include "parameter.h"
+processor.cc~:#include "array.h"
+processor.cc~:#include "const.h"
+processor.cc~:#include "basic_circuit.h"
+processor.cc~:#include "XML_Parse.h"
+processor.cc~:#include "processor.h"
+processor.cc~:#include "version.h"
+processor.h:#include "XML_Parse.h"
+processor.h:#include "area.h"
+processor.h:#include "decoder.h"
+processor.h:#include "parameter.h"
+processor.h:#include "array.h"
+processor.h:#include "arbiter.h"
+processor.h:#include <vector>
+processor.h:#include "basic_components.h"
+processor.h:#include "core.h"
+processor.h:#include "memoryctrl.h"
+processor.h:#include "router.h"
+processor.h:#include "sharedcache.h"
+processor.h:#include "noc.h"
+processor.h:#include "iocontrollers.h"
+processor.h~:#include "XML_Parse.h"
+processor.h~:#include "area.h"
+processor.h~:#include "decoder.h"
+processor.h~:#include "parameter.h"
+processor.h~:#include "array.h"
+processor.h~:#include "arbiter.h"
+processor.h~:#include <vector>
+processor.h~:#include "basic_components.h"
+processor.h~:#include "core.h"
+processor.h~:#include "memoryctrl.h"
+processor.h~:#include "router.h"
+processor.h~:#include "sharedcache.h"
+processor.h~:#include "noc.h"
+processor.h~:#include "iocontrollers.h"
+README:  include both throughput and latency.
+README:Future releases may include the modeling of embedded low-power 
+sharedcache.cc:#include "io.h"
+sharedcache.cc:#include "parameter.h"
+sharedcache.cc:#include "array.h"
+sharedcache.cc:#include "const.h"
+sharedcache.cc:#include "logic.h"
+sharedcache.cc:#include "basic_circuit.h"
+sharedcache.cc:#include "arbiter.h"
+sharedcache.cc:#include <string.h>
+sharedcache.cc:#include <iostream>
+sharedcache.cc:#include <algorithm>
+sharedcache.cc:#include "XML_Parse.h"
+sharedcache.cc:#include <string.h>
+sharedcache.cc:#include <cmath>
+sharedcache.cc:#include <assert.h>
+sharedcache.cc:#include "sharedcache.h"
+sharedcache.h:#include "XML_Parse.h"
+sharedcache.h:#include "area.h"
+sharedcache.h:#include "parameter.h"
+sharedcache.h:#include "array.h"
+sharedcache.h:#include "logic.h"
+sharedcache.h:#include <vector>
+sharedcache.h:#include "basic_components.h"
+technology_xeon_core.cc:#include "basic_circuit.h"
+technology_xeon_core.cc:#include "parameter.h"
+Xeon.xml:			<!-- Alu stats by default, the processor has one FPU that includes the divider and 
+Xeon.xml:			 multiplier. The fpu accesses should include accesses to multiplier and divider  -->
+XML_Parse.cc:#include <stdio.h>
+XML_Parse.cc:#include "xmlParser.h"
+XML_Parse.cc:#include <string>
+XML_Parse.cc:#include "XML_Parse.h"
+XML_Parse.cc~:#include <stdio.h>
+XML_Parse.cc~:#include "xmlParser.h"
+XML_Parse.cc~:#include <string>
+XML_Parse.cc~:#include "XML_Parse.h"
+XML_Parse.h:#include <stdio.h>
+XML_Parse.h:#include "xmlParser.h"
+XML_Parse.h:#include <string.h>
+XML_Parse.h:#include <iostream>
+xmlParser.cc:#include "xmlParser.h"
+xmlParser.cc://#include <crtdbg.h>
+xmlParser.cc:#include <Windows.h> // to have IsTextUnicode, MultiByteToWideChar, WideCharToMultiByte to handle unicode files
+xmlParser.cc:#include <memory.h>
+xmlParser.cc:#include <assert.h>
+xmlParser.cc:#include <stdio.h>
+xmlParser.cc:#include <string.h>
+xmlParser.cc:#include <stdlib.h>
+xmlParser.cc:           #include <widec.h>
+xmlParser.cc:           #include <widec.h>
+xmlParser.h: * \section usage General usage: How to include the XMLParser library inside your project.
+xmlParser.h: * 	I always use the normal, ".cpp"-based, XMLParser Library (I simply include the
+xmlParser.h:#include <stdlib.h>
+xmlParser.h:#include <tchar.h>
+xmlParser.h:#include <wchar.h> // to have 'wcsrtombs' for ANSI version
+xmlParser.h:     * mechanism included inside the "openFileHelper" function).
+xmlParser.h:/** @defgroup XMLParserBase64Tool Helper class to include binary data inside XML strings using "Base64 encoding".
+xmlParser.h:/// Helper class to include binary data inside XML strings using "Base64 encoding".
+xmlParser.h:/** The "XMLParserBase64Tool" class allows you to include any binary data (images, sounds,...)
+xmlParser.h: * To include some binary data into an XML file, you must convert the binary data into
+xmlParser.h: * b64-encoded text included inside the XML file, use "decode". Alternatively, these

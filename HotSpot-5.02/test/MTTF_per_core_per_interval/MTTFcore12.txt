@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 12_l2_left | Total failures: 5522 | Failure percentage: 5.5220
+Block name: 12_l2_right | Total failures: 6695 | Failure percentage: 6.6950
+Block name: 12_l2_bottom | Total failures: 74740 | Failure percentage: 74.7400
+Block name: 12_router | Total failures: 11346 | Failure percentage: 11.3460
+Block name: 12_icache | Total failures: 538 | Failure percentage: 0.5380
+Block name: 12_dcache | Total failures: 553 | Failure percentage: 0.5530
+Block name: 12_branchpred | Total failures: 4 | Failure percentage: 0.0040
+Block name: 12_pc | Total failures: 36 | Failure percentage: 0.0360
+Block name: 12_mbox | Total failures: 36 | Failure percentage: 0.0360
+Block name: 12_dtb1 | Total failures: 37 | Failure percentage: 0.0370
+Block name: 12_dtb2 | Total failures: 24 | Failure percentage: 0.0240
+Block name: 12_rbroadcast | Total failures: 121 | Failure percentage: 0.1210
+Block name: 12_itb | Total failures: 15 | Failure percentage: 0.0150
+Block name: 12_intexec1 | Total failures: 7 | Failure percentage: 0.0070
+Block name: 12_intexec2 | Total failures: 15 | Failure percentage: 0.0150
+Block name: 12_intexec3 | Total failures: 13 | Failure percentage: 0.0130
+Block name: 12_intexec4 | Total failures: 10 | Failure percentage: 0.0100
+Block name: 12_rfile1 | Total failures: 9 | Failure percentage: 0.0090
+Block name: 12_rfile2 | Total failures: 14 | Failure percentage: 0.0140
+Block name: 12_intmap | Total failures: 29 | Failure percentage: 0.0290
+Block name: 12_intq1 | Total failures: 3 | Failure percentage: 0.0030
+Block name: 12_intq2 | Total failures: 8 | Failure percentage: 0.0080
+Block name: 12_intq3 | Total failures: 12 | Failure percentage: 0.0120
+Block name: 12_l2int | Total failures: 50 | Failure percentage: 0.0500
+Block name: 12_ldst1 | Total failures: 25 | Failure percentage: 0.0250
+Block name: 12_ldst2 | Total failures: 22 | Failure percentage: 0.0220
+Block name: 12_fpmap | Total failures: 24 | Failure percentage: 0.0240
+Block name: 12_fpq | Total failures: 21 | Failure percentage: 0.0210
+Block name: 12_fpmul | Total failures: 16 | Failure percentage: 0.0160
+Block name: 12_fpreg | Total failures: 21 | Failure percentage: 0.0210
+Block name: 12_fpadd | Total failures: 18 | Failure percentage: 0.0180
+Block name: 12_fpdiv | Total failures: 16 | Failure percentage: 0.0160
+SoC final MTTF: 2.754817e-03

@@ -1,0 +1,12 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/cholsky
+echo "Running cholsky now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./cholesky -p64 < tk14.O
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "cholsky Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 switchcpu
+/sbin/m5 exit

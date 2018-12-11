@@ -1,0 +1,26 @@
+old_total_processor_power = 149.296
+Old_power[0]= 0.599056 ...... New_Power[0]= 0.599056 ...... CPU = FREQ_2GHz00 ... coefficient = 1
+Old_power[1]= 0.608813 ...... New_Power[1]= 0.608813 ...... CPU = FREQ_2GHz01 ... coefficient = 1
+Old_power[2]= 24.2155 ...... New_Power[2]= 24.2155 ...... CPU = FREQ_2GHz02 ... coefficient = 1
+Old_power[3]= 0.912712 ...... New_Power[3]= 0.912712 ...... CPU = FREQ_2GHz03 ... coefficient = 1
+Old_power[4]= 19.6566 ...... New_Power[4]= 19.6566 ...... CPU = FREQ_2GHz04 ... coefficient = 1
+Old_power[5]= 19.5995 ...... New_Power[5]= 19.5995 ...... CPU = FREQ_2GHz05 ... coefficient = 1
+Old_power[6]= 20.8284 ...... New_Power[6]= 20.8284 ...... CPU = FREQ_2GHz06 ... coefficient = 1
+Old_power[7]= 20.5209 ...... New_Power[7]= 20.5209 ...... CPU = FREQ_2GHz07 ... coefficient = 1
+Old_power[8]= 18.5059 ...... New_Power[8]= 18.5059 ...... CPU = FREQ_2GHz08 ... coefficient = 1
+Old_power[9]= 18.0984 ...... New_Power[9]= 18.0984 ...... CPU = FREQ_2GHz09 ... coefficient = 1
+Old_power[10]= 0.988258 ...... New_Power[10]= 0.988258 ...... CPU = FREQ_2GHz10 ... coefficient = 1
+Old_power[11]= 0.634898 ...... New_Power[11]= 0.634898 ...... CPU = FREQ_2GHz11 ... coefficient = 1
+Old_power[12]= 0.631287 ...... New_Power[12]= 0.631287 ...... CPU = FREQ_2GHz12 ... coefficient = 1
+Old_power[13]= 0.626571 ...... New_Power[13]= 0.626571 ...... CPU = FREQ_2GHz13 ... coefficient = 1
+Old_power[14]= 0.633653 ...... New_Power[14]= 0.633653 ...... CPU = FREQ_2GHz14 ... coefficient = 1
+Old_power[15]= 0.630528 ...... New_Power[15]= 0.630528 ...... CPU = FREQ_2GHz15 ... coefficient = 1
+
+
+old_power_sum= 147.690976
+new_power_sum= 147.690976
+new/old = 1.0
+
+old_total_processor_power= 149.296
+new_total_processor_power= 149.296
+new/old = 1.0

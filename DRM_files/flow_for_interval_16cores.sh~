@@ -1,0 +1,112 @@
+#!/bin/bash
+declare -i NUM_CORES=16
+
+#dir_gem5=/home/milad/gem5
+#dir_DVFS=$dir_gem5/DVFS
+#dir_m5out=$dir_gem5/work/m5out
+#dir_mcpat=$dir_gem5/mcpat0.8
+#dir_hotspot=$dir_gem5/HotSpot-5.02
+#dir_rest=$dir_gem5/REST
+
+dir_hotspot=/home/milad/gem5/HotSpot-5.02
+my_nxn="4x4"
+my_router_location="TOP"
+file_config=$dir_hotspot/ev6cluster${my_nxn}.config
+file_floorplan=$dir_hotspot/ev6cluster${my_nxn}${my_router_location}.flp
+#file_floorplan=$dir_hotspot/floorplan/ev6_2x2_TOP.flp
+
+filename="/home/milad/gem5/DVFS/run_info/info"
+SWAPLIST=NULL
+while read line;
+do   
+    CPULIST=$SWAPLIST
+    echo $line
+    SWAPLIST="${line#* }"
+    INUM="${line% *}"
+done < $filename
+echo "INUM= $INUM"
+echo "CPULIST= $CPULIST"
+echo "SWAPLIST= $SWAPLIST"
+previous_INUM=$(($INUM-1))  
+
+mkdir /home/milad/gem5/DVFS/interval_$INUM 
+mkdir /home/milad/gem5/DVFS/preprocessing
+cp /home/milad/gem5/m5out/*  /home/milad/gem5/DVFS/preprocessing
+cd /home/milad/gem5/DVFS/preprocessing/
+cp /home/milad/gem5/DVFS_files/DVFS_preprocessing.py /home/milad/gem5/DVFS/preprocessing
+
+python DVFS_preprocessing.py $CPULIST
+
+cp /home/milad/gem5/DVFS/preprocessing/config_DVFS.ini /home/milad/gem5/DVFS/interval_$INUM/config.ini
+cp /home/milad/gem5/DVFS/preprocessing/stats_DVFS.txt /home/milad/gem5/DVFS/interval_$INUM/stats.txt
+
+cp /home/milad/gem5/DVFS/preprocessing/router_new.txt /home/milad/gem5/DVFS/interval_$INUM/router.txt
+cp /home/milad/gem5/DVFS_files/Gem5_Mcpat_milad_DVFS.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+python Gem5_Mcpat_milad_DVFS.py
+
+cp /home/milad/gem5/DVFS_files/Do_SWAP.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+python Do_SWAP.py $SWAPLIST #swap correction for ruby
+
+cd /home/milad/gem5/mcpat0.8
+./mcpat -infile /home/milad/gem5/DVFS/interval_$INUM/power_65nm_swapped_sorted.xml -outfile  /home/milad/gem5/DVFS/interval_$INUM/power_mcpat.ptrace -print_level 6 >/home/milad/gem5/DVFS/interval_$INUM/mcpatout.txt
+
+cp /home/milad/gem5/DVFS_files/core_powers_calc.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+python core_powers_calc.py $CPULIST
+
+cp /home/milad/gem5/DVFS_files/Mcpat_to_Hotspot_accumulative.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+#The input file would be the accumulative_power_file from the previous intervals
+#it produces power.ptrace (interval power) accumulative_power.ptrace (accumulative power)
+python Mcpat_to_Hotspot_accumulative.py  ACCUMULATIVE=YES /home/milad/gem5/DVFS/interval_$previous_INUM/accumulative_power.ptrace $INUM $CPULIST
+
+#Temperture for just the interval_power using power.ptrace
+cd /home/milad/gem5/HotSpot-5.02
+./hotspot -c $file_config -f $file_floorplan -p /home/milad/gem5/DVFS/interval_$INUM/power.ptrace  -steady_file /home/milad/gem5/DVFS/interval_$INUM/T_NotNormalized.steady -model_type grid -grid_steady_file /home/milad/gem5/DVFS/interval_$INUM/grid_NotNormalized.steady
+
+#Temperture for accumulative_power using accumulative_power.ptrace
+./hotspot -c $file_config -f $file_floorplan -p /home/milad/gem5/DVFS/interval_$INUM/accumulative_power.ptrace  -steady_file /home/milad/gem5/DVFS/interval_$INUM/accumulative_T_NotNormalized.steady -model_type grid -grid_steady_file /home/milad/gem5/DVFS/interval_$INUM/accumulative_grid_NotNormalized.steady
+
+#normalizing temperature
+cp /home/milad/gem5/DVFS_files/normalize_T.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+python ./normalize_T.py #produces T.steady grid.steady and also accumulative ones
+
+cd /home/milad/gem5/HotSpot-5.02
+./grid_thermal_map.pl $file_floorplan /home/milad/gem5/DVFS/interval_$INUM/grid.steady  > /home/milad/gem5/DVFS/interval_$INUM/grid.svg
+convert -font Helvetica svg:grid.svg grid.pdf
+
+./grid_thermal_map.pl $file_floorplan /home/milad/gem5/DVFS/interval_$INUM/accumulative_grid.steady  > /home/milad/gem5/DVFS/interval_$INUM/accumulative_grid.svg
+convert -font Helvetica svg:accumulative_grid.svg accumulative_grid.pdf
+
+
+#calculating temperatore for each core
+cp /home/milad/gem5/DVFS_files/temp_calc.py /home/milad/gem5/DVFS/interval_$INUM
+cd /home/milad/gem5/DVFS/interval_$INUM
+python temp_calc.py $file_floorplan ./T.steady ./temperture.txt
+
+#REST
+cd /home/milad/gem5/REST
+# MTTF for just the interval, using T.steady
+./REST $file_floorplan /home/milad/gem5/DVFS/interval_$INUM/T.steady -o /home/milad/gem5/DVFS/interval_$INUM/MTTF_system_per_interval.txt -V 1.1 -freq $CPULIST
+
+mkdir /home/milad/gem5/DVFS/interval_$INUM/MTTF_per_core_per_interval
+for ((i=0 ; i<$NUM_CORES ; i++))
+do
+    echo " REST for core$i"
+    ./REST $dir_hotspot/floorplan_per_core_TOP/ev6_core$i.flp /home/milad/gem5/DVFS/interval_$INUM/T.steady -o /home/milad/gem5/DVFS/interval_$INUM/MTTF_per_core_per_interval/MTTFcore$i.txt -V 1.1 -freq $CPULIST
+done
+
+
+cd /home/milad/gem5/REST
+# MTTF accumulstive, using accumulative_T.steady
+./REST $file_floorplan /home/milad/gem5/DVFS/interval_$INUM/accumulative_T.steady -o /home/milad/gem5/DVFS/interval_$INUM/accumulative_MTTF_system.txt -V 1.1 -freq $CPULIST
+
+mkdir /home/milad/gem5/DVFS/interval_$INUM/accumulative_MTTF_per_core
+for ((i=0 ; i<$NUM_CORES ; i++))
+do
+    echo " REST for core$i"
+    ./REST $dir_hotspot/floorplan_per_core_TOP/ev6_core$i.flp /home/milad/gem5/DVFS/interval_$INUM/accumulative_T.steady -o /home/milad/gem5/DVFS/interval_$INUM/accumulative_MTTF_per_core/MTTFcore$i.txt -V 1.1 -freq $CPULIST
+done

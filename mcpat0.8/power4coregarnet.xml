@@ -1,0 +1,626 @@
+<?xml version="1.0" ?>
+<component id="root" name="root">
+	<component id="system" name="system">
+		<param name="number_of_cores" value="4"/>
+		<param name="number_of_L1Directories" value="0"/>
+		<param name="number_of_L2Directories" value="0"/>
+		<param name="number_of_L2s" value="4"/>
+		<param name="number_of_L3s" value="0"/>
+		<param name="number_of_NoCs" value="0"/>
+		<param name="homogeneous_cores" value="0"/>
+		<param name="homogeneous_L2s" value="0"/>
+		<param name="homogeneous_L1Directories" value="0"/>
+		<param name="homogeneous_L2Directories" value="0"/>
+		<param name="homogeneous_L3s" value="0"/>
+		<param name="homogeneous_ccs" value="1"/>
+		<param name="homogeneous_NoCs" value="0"/>
+		<param name="core_tech_node" value="45"/>
+		<param name="target_core_clockrate" value="3000"/>
+		<param name="temperature" value="350"/>
+		<param name="number_cache_levels" value="1"/>
+		<param name="interconnect_projection_type" value="0"/>
+		<param name="device_type" value="0"/>
+		<param name="longer_channel_device" value="0"/>
+		<param name="machine_bits" value="64"/>
+		<param name="virtual_address_width" value="64"/>
+		<param name="physical_address_width" value="52"/>
+		<param name="virtual_memory_page_size" value="4096"/>
+		<param name="number_of_dir_levels" value="0"/>
+		<stat name="total_cycles" value="18177000330"/>
+		<stat name="idle_cycles" value="0"/>
+		<stat name="busy_cycles" value="18177000330"/>
+		<component id="system.core0" name="core0">
+			<param name="clock_rate" value="2000"/>
+			<param name="instruction_length" value="32"/>
+			<param name="opcode_width" value="7"/>
+			<param name="machine_type" value="1"/>
+			<param name="number_hardware_threads" value="1"/>
+			<param name="fetch_width" value="2"/>
+			<param name="number_instruction_fetch_ports" value="1"/>
+			<param name="decode_width" value="1"/>
+			<param name="issue_width" value="1"/>
+			<param name="commit_width" value="1"/>
+			<param name="fp_issue_width" value="1"/>
+			<param name="prediction_width" value="1"/>
+			<param name="pipelines_per_core" value="1,1"/>
+			<param name="pipeline_depth" value="7,10"/>
+			<param name="ALU_per_core" value="2"/>
+			<param name="MUL_per_core" value="1"/>
+			<param name="FPU_per_core" value="1"/>
+			<param name="instruction_buffer_size" value="32"/>
+			<param name="decoded_stream_buffer_size" value="16"/>
+			<param name="instruction_window_scheme" value="0"/>
+			<param name="instruction_window_size" value="16"/>
+			<param name="fp_instruction_window_size" value="16"/>
+			<param name="ROB_size" value="80"/>
+			<param name="archi_Regs_IRF_size" value="32"/>
+			<param name="archi_Regs_FRF_size" value="32"/>
+			<param name="phy_Regs_IRF_size" value="32"/>
+			<param name="phy_Regs_FRF_size" value="32"/>
+			<param name="rename_scheme" value="0"/>
+			<param name="register_windows_size" value="0"/>
+			<param name="LSU_order" value="inorder"/>
+			<param name="store_buffer_size" value="64"/>
+			<param name="load_buffer_size" value="0"/>
+			<param name="memory_ports" value="1"/>
+			<param name="RAS_size" value="32"/>
+			<stat name="total_instructions" value="3419912624"/>
+			<stat name="int_instructions" value="2746379544"/>
+			<stat name="fp_instructions" value="723550812"/>
+			<stat name="branch_instructions" value="200083630"/>
+			<stat name="branch_mispredictions" value="0"/>
+			<stat name="load_instructions" value="651043373"/>
+			<stat name="store_instructions" value="449267386"/>
+			<stat name="committed_instructions" value="3419912624"/>
+			<stat name="committed_int_instructions" value="2746379544"/>
+			<stat name="committed_fp_instructions" value="723550812"/>
+			<stat name="pipeline_duty_cycle" value="0.5"/>
+			<stat name="total_cycles" value="18177000332"/>
+			<stat name="idle_cycles" value="69261146.007613"/>
+			<stat name="busy_cycles" value="18107739185.992386"/>
+			<stat name="ROB_reads" value="0"/>
+			<stat name="ROB_writes" value="0"/>
+			<stat name="rename_accesses" value="0"/>
+			<stat name="fp_rename_accesses" value="0"/>
+			<stat name="inst_window_reads" value="0"/>
+			<stat name="inst_window_writes" value="0"/>
+			<stat name="inst_window_wakeup_access" value="0"/>
+			<stat name="fp_inst_window_reads" value="0"/>
+			<stat name="fp_inst_window_writes" value="0"/>
+			<stat name="fp_inst_window_wakeup_access" value="0"/>
+			<stat name="int_regfile_reads" value="4561927000"/>
+			<stat name="float_regfile_reads" value="836209737"/>
+			<stat name="int_regfile_writes" value="1954382404"/>
+			<stat name="float_regfile_writes" value="584495166"/>
+			<stat name="function_calls" value="104910651"/>
+			<stat name="context_switches" value="788"/>
+			<stat name="ialu_accesses" value="2746379544"/>
+			<stat name="fpu_accesses" value="723550812"/>
+			<stat name="mul_accesses" value="0"/>
+			<stat name="cdb_alu_accesses" value="2746379544"/>
+			<stat name="cdb_mul_accesses" value="0"/>
+			<stat name="cdb_fpu_accesses" value="723550812"/>
+			<stat name="IFU_duty_cycle" value="0.5"/>
+			<stat name="LSU_duty_cycle" value="0.25"/>
+			<stat name="MemManU_I_duty_cycle" value="0.5"/>
+			<stat name="MemManU_D_duty_cycle" value="0.25"/>
+			<stat name="ALU_duty_cycle" value="0.9"/>
+			<stat name="MUL_duty_cycle" value="0"/>
+			<stat name="FPU_duty_cycle" value="0.6"/>
+			<stat name="ALU_cdb_duty_cycle" value="0.9"/>
+			<stat name="MUL_cdb_duty_cycle" value="0"/>
+			<stat name="FPU_cdb_duty_cycle" value="0.6"/>
+			<component id="system.core0.predictor" name="PBT">
+				<param name="local_predictor_size" value="10,3"/>
+				<param name="local_predictor_entries" value="1024"/>
+				<param name="global_predictor_entries" value="4096"/>
+				<param name="global_predictor_bits" value="2"/>
+				<param name="chooser_predictor_entries" value="4096"/>
+				<param name="chooser_predictor_bits" value="2"/>
+			</component>
+			<component id="system.core0.itlb" name="itlb">
+				<param name="number_entries" value="48"/>
+				<stat name="total_accesses" value="2043324350"/>
+				<stat name="total_misses" value="631"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core0.dtlb" name="dtlb">
+				<param name="number_entries" value="64"/>
+				<stat name="read_accesses" value="650997848"/>
+				<stat name="write_accesses" value="449255551"/>
+				<stat name="read_misses" value="9605"/>
+				<stat name="write_misses" value="1358"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core0.dcache" name="dcache">
+				<param name="BTB_config" value="65536,2,2,1,3,3"/>
+				<param name="read_accesses" value="663306943"/>
+				<param name="write_accesses" value="445461642"/>
+			</component>
+			<component id="system.core0.BTB" name="BTB">
+				<param name="BTB_config" value="6144,4,2,1,1,3"/>
+				<param name="read_accesses" value="0"/>
+				<param name="write_accesses" value="0"/>
+			</component>
+		</component>
+		<component id="system.core1" name="core1">
+			<param name="clock_rate" value="2000"/>
+			<param name="instruction_length" value="32"/>
+			<param name="opcode_width" value="7"/>
+			<param name="machine_type" value="1"/>
+			<param name="number_hardware_threads" value="1"/>
+			<param name="fetch_width" value="2"/>
+			<param name="number_instruction_fetch_ports" value="1"/>
+			<param name="decode_width" value="1"/>
+			<param name="issue_width" value="1"/>
+			<param name="commit_width" value="1"/>
+			<param name="fp_issue_width" value="1"/>
+			<param name="prediction_width" value="1"/>
+			<param name="pipelines_per_core" value="1,1"/>
+			<param name="pipeline_depth" value="7,10"/>
+			<param name="ALU_per_core" value="2"/>
+			<param name="MUL_per_core" value="1"/>
+			<param name="FPU_per_core" value="1"/>
+			<param name="instruction_buffer_size" value="32"/>
+			<param name="decoded_stream_buffer_size" value="16"/>
+			<param name="instruction_window_scheme" value="0"/>
+			<param name="instruction_window_size" value="16"/>
+			<param name="fp_instruction_window_size" value="16"/>
+			<param name="ROB_size" value="80"/>
+			<param name="archi_Regs_IRF_size" value="32"/>
+			<param name="archi_Regs_FRF_size" value="32"/>
+			<param name="phy_Regs_IRF_size" value="32"/>
+			<param name="phy_Regs_FRF_size" value="32"/>
+			<param name="rename_scheme" value="0"/>
+			<param name="register_windows_size" value="0"/>
+			<param name="LSU_order" value="inorder"/>
+			<param name="store_buffer_size" value="64"/>
+			<param name="load_buffer_size" value="0"/>
+			<param name="memory_ports" value="1"/>
+			<param name="RAS_size" value="32"/>
+			<stat name="total_instructions" value="3423861494"/>
+			<stat name="int_instructions" value="2748779974"/>
+			<stat name="fp_instructions" value="725413511"/>
+			<stat name="branch_instructions" value="200242554"/>
+			<stat name="branch_mispredictions" value="0"/>
+			<stat name="load_instructions" value="651515227"/>
+			<stat name="store_instructions" value="449739124"/>
+			<stat name="committed_instructions" value="3423861494"/>
+			<stat name="committed_int_instructions" value="2748779974"/>
+			<stat name="committed_fp_instructions" value="725413511"/>
+			<stat name="pipeline_duty_cycle" value="0.5"/>
+			<stat name="total_cycles" value="18175781285"/>
+			<stat name="idle_cycles" value="49731576.517883"/>
+			<stat name="busy_cycles" value="18126049708.482117"/>
+			<stat name="ROB_reads" value="0"/>
+			<stat name="ROB_writes" value="0"/>
+			<stat name="rename_accesses" value="0"/>
+			<stat name="fp_rename_accesses" value="0"/>
+			<stat name="inst_window_reads" value="0"/>
+			<stat name="inst_window_writes" value="0"/>
+			<stat name="inst_window_wakeup_access" value="0"/>
+			<stat name="fp_inst_window_reads" value="0"/>
+			<stat name="fp_inst_window_writes" value="0"/>
+			<stat name="fp_inst_window_wakeup_access" value="0"/>
+			<stat name="int_regfile_reads" value="4567439600"/>
+			<stat name="float_regfile_reads" value="838371480"/>
+			<stat name="int_regfile_writes" value="1955863964"/>
+			<stat name="float_regfile_writes" value="586008533"/>
+			<stat name="function_calls" value="104909060"/>
+			<stat name="context_switches" value="826"/>
+			<stat name="ialu_accesses" value="2748779974"/>
+			<stat name="fpu_accesses" value="725413511"/>
+			<stat name="mul_accesses" value="0"/>
+			<stat name="cdb_alu_accesses" value="2748779974"/>
+			<stat name="cdb_mul_accesses" value="0"/>
+			<stat name="cdb_fpu_accesses" value="725413511"/>
+			<stat name="IFU_duty_cycle" value="0.5"/>
+			<stat name="LSU_duty_cycle" value="0.25"/>
+			<stat name="MemManU_I_duty_cycle" value="0.5"/>
+			<stat name="MemManU_D_duty_cycle" value="0.25"/>
+			<stat name="ALU_duty_cycle" value="0.9"/>
+			<stat name="MUL_duty_cycle" value="0"/>
+			<stat name="FPU_duty_cycle" value="0.6"/>
+			<stat name="ALU_cdb_duty_cycle" value="0.9"/>
+			<stat name="MUL_cdb_duty_cycle" value="0"/>
+			<stat name="FPU_cdb_duty_cycle" value="0.6"/>
+			<component id="system.core1.predictor" name="PBT">
+				<param name="local_predictor_size" value="10,3"/>
+				<param name="local_predictor_entries" value="1024"/>
+				<param name="global_predictor_entries" value="4096"/>
+				<param name="global_predictor_bits" value="2"/>
+				<param name="chooser_predictor_entries" value="4096"/>
+				<param name="chooser_predictor_bits" value="2"/>
+			</component>
+			<component id="system.core1.itlb" name="itlb">
+				<param name="number_entries" value="48"/>
+				<stat name="total_accesses" value="2048313939"/>
+				<stat name="total_misses" value="601"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core1.dtlb" name="dtlb">
+				<param name="number_entries" value="64"/>
+				<stat name="read_accesses" value="651469515"/>
+				<stat name="write_accesses" value="449727196"/>
+				<stat name="read_misses" value="9394"/>
+				<stat name="write_misses" value="1300"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core1.dcache" name="dcache">
+				<param name="BTB_config" value="65536,2,2,1,3,3"/>
+				<param name="read_accesses" value="653782997"/>
+				<param name="write_accesses" value="441362054"/>
+			</component>
+			<component id="system.core1.BTB" name="BTB">
+				<param name="BTB_config" value="6144,4,2,1,1,3"/>
+				<param name="read_accesses" value="0"/>
+				<param name="write_accesses" value="0"/>
+			</component>
+		</component>
+		<component id="system.core2" name="core2">
+			<param name="clock_rate" value="2000"/>
+			<param name="instruction_length" value="32"/>
+			<param name="opcode_width" value="7"/>
+			<param name="machine_type" value="1"/>
+			<param name="number_hardware_threads" value="1"/>
+			<param name="fetch_width" value="2"/>
+			<param name="number_instruction_fetch_ports" value="1"/>
+			<param name="decode_width" value="1"/>
+			<param name="issue_width" value="1"/>
+			<param name="commit_width" value="1"/>
+			<param name="fp_issue_width" value="1"/>
+			<param name="prediction_width" value="1"/>
+			<param name="pipelines_per_core" value="1,1"/>
+			<param name="pipeline_depth" value="7,10"/>
+			<param name="ALU_per_core" value="2"/>
+			<param name="MUL_per_core" value="1"/>
+			<param name="FPU_per_core" value="1"/>
+			<param name="instruction_buffer_size" value="32"/>
+			<param name="decoded_stream_buffer_size" value="16"/>
+			<param name="instruction_window_scheme" value="0"/>
+			<param name="instruction_window_size" value="16"/>
+			<param name="fp_instruction_window_size" value="16"/>
+			<param name="ROB_size" value="80"/>
+			<param name="archi_Regs_IRF_size" value="32"/>
+			<param name="archi_Regs_FRF_size" value="32"/>
+			<param name="phy_Regs_IRF_size" value="32"/>
+			<param name="phy_Regs_FRF_size" value="32"/>
+			<param name="rename_scheme" value="0"/>
+			<param name="register_windows_size" value="0"/>
+			<param name="LSU_order" value="inorder"/>
+			<param name="store_buffer_size" value="64"/>
+			<param name="load_buffer_size" value="0"/>
+			<param name="memory_ports" value="1"/>
+			<param name="RAS_size" value="32"/>
+			<stat name="total_instructions" value="3433861692"/>
+			<stat name="int_instructions" value="2756974518"/>
+			<stat name="fp_instructions" value="727281653"/>
+			<stat name="branch_instructions" value="200909617"/>
+			<stat name="branch_mispredictions" value="0"/>
+			<stat name="load_instructions" value="653380233"/>
+			<stat name="store_instructions" value="451149998"/>
+			<stat name="committed_instructions" value="3433861692"/>
+			<stat name="committed_int_instructions" value="2756974518"/>
+			<stat name="committed_fp_instructions" value="727281653"/>
+			<stat name="pipeline_duty_cycle" value="0.5"/>
+			<stat name="total_cycles" value="18176720647"/>
+			<stat name="idle_cycles" value="279678.698618"/>
+			<stat name="busy_cycles" value="18176440968.301384"/>
+			<stat name="ROB_reads" value="0"/>
+			<stat name="ROB_writes" value="0"/>
+			<stat name="rename_accesses" value="0"/>
+			<stat name="fp_rename_accesses" value="0"/>
+			<stat name="inst_window_reads" value="0"/>
+			<stat name="inst_window_writes" value="0"/>
+			<stat name="inst_window_wakeup_access" value="0"/>
+			<stat name="fp_inst_window_reads" value="0"/>
+			<stat name="fp_inst_window_writes" value="0"/>
+			<stat name="fp_inst_window_wakeup_access" value="0"/>
+			<stat name="int_regfile_reads" value="4580765941"/>
+			<stat name="float_regfile_reads" value="840526693"/>
+			<stat name="int_regfile_writes" value="1961606514"/>
+			<stat name="float_regfile_writes" value="587511197"/>
+			<stat name="function_calls" value="105207367"/>
+			<stat name="context_switches" value="860"/>
+			<stat name="ialu_accesses" value="2756974518"/>
+			<stat name="fpu_accesses" value="727281653"/>
+			<stat name="mul_accesses" value="0"/>
+			<stat name="cdb_alu_accesses" value="2756974518"/>
+			<stat name="cdb_mul_accesses" value="0"/>
+			<stat name="cdb_fpu_accesses" value="727281653"/>
+			<stat name="IFU_duty_cycle" value="0.5"/>
+			<stat name="LSU_duty_cycle" value="0.25"/>
+			<stat name="MemManU_I_duty_cycle" value="0.5"/>
+			<stat name="MemManU_D_duty_cycle" value="0.25"/>
+			<stat name="ALU_duty_cycle" value="0.9"/>
+			<stat name="MUL_duty_cycle" value="0"/>
+			<stat name="FPU_duty_cycle" value="0.6"/>
+			<stat name="ALU_cdb_duty_cycle" value="0.9"/>
+			<stat name="MUL_cdb_duty_cycle" value="0"/>
+			<stat name="FPU_cdb_duty_cycle" value="0.6"/>
+			<component id="system.core2.predictor" name="PBT">
+				<param name="local_predictor_size" value="10,3"/>
+				<param name="local_predictor_entries" value="1024"/>
+				<param name="global_predictor_entries" value="4096"/>
+				<param name="global_predictor_bits" value="2"/>
+				<param name="chooser_predictor_entries" value="4096"/>
+				<param name="chooser_predictor_bits" value="2"/>
+			</component>
+			<component id="system.core2.itlb" name="itlb">
+				<param name="number_entries" value="48"/>
+				<stat name="total_accesses" value="2053733454"/>
+				<stat name="total_misses" value="921"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core2.dtlb" name="dtlb">
+				<param name="number_entries" value="64"/>
+				<stat name="read_accesses" value="653333162"/>
+				<stat name="write_accesses" value="451137787"/>
+				<stat name="read_misses" value="10101"/>
+				<stat name="write_misses" value="1623"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core2.dcache" name="dcache">
+				<param name="BTB_config" value="65536,2,2,1,3,3"/>
+				<param name="read_accesses" value="881718706"/>
+				<param name="write_accesses" value="549201586"/>
+			</component>
+			<component id="system.core2.BTB" name="BTB">
+				<param name="BTB_config" value="6144,4,2,1,1,3"/>
+				<param name="read_accesses" value="0"/>
+				<param name="write_accesses" value="0"/>
+			</component>
+		</component>
+		<component id="system.core3" name="core3">
+			<param name="clock_rate" value="2000"/>
+			<param name="instruction_length" value="32"/>
+			<param name="opcode_width" value="7"/>
+			<param name="machine_type" value="1"/>
+			<param name="number_hardware_threads" value="1"/>
+			<param name="fetch_width" value="2"/>
+			<param name="number_instruction_fetch_ports" value="1"/>
+			<param name="decode_width" value="1"/>
+			<param name="issue_width" value="1"/>
+			<param name="commit_width" value="1"/>
+			<param name="fp_issue_width" value="1"/>
+			<param name="prediction_width" value="1"/>
+			<param name="pipelines_per_core" value="1,1"/>
+			<param name="pipeline_depth" value="7,10"/>
+			<param name="ALU_per_core" value="2"/>
+			<param name="MUL_per_core" value="1"/>
+			<param name="FPU_per_core" value="1"/>
+			<param name="instruction_buffer_size" value="32"/>
+			<param name="decoded_stream_buffer_size" value="16"/>
+			<param name="instruction_window_scheme" value="0"/>
+			<param name="instruction_window_size" value="16"/>
+			<param name="fp_instruction_window_size" value="16"/>
+			<param name="ROB_size" value="80"/>
+			<param name="archi_Regs_IRF_size" value="32"/>
+			<param name="archi_Regs_FRF_size" value="32"/>
+			<param name="phy_Regs_IRF_size" value="32"/>
+			<param name="phy_Regs_FRF_size" value="32"/>
+			<param name="rename_scheme" value="0"/>
+			<param name="register_windows_size" value="0"/>
+			<param name="LSU_order" value="inorder"/>
+			<param name="store_buffer_size" value="64"/>
+			<param name="load_buffer_size" value="0"/>
+			<param name="memory_ports" value="1"/>
+			<param name="RAS_size" value="32"/>
+			<stat name="total_instructions" value="3424705231"/>
+			<stat name="int_instructions" value="2749593917"/>
+			<stat name="fp_instructions" value="725398362"/>
+			<stat name="branch_instructions" value="200413347"/>
+			<stat name="branch_mispredictions" value="0"/>
+			<stat name="load_instructions" value="651659755"/>
+			<stat name="store_instructions" value="449807859"/>
+			<stat name="committed_instructions" value="3424705231"/>
+			<stat name="committed_int_instructions" value="2749593917"/>
+			<stat name="committed_fp_instructions" value="725398362"/>
+			<stat name="pipeline_duty_cycle" value="0.5"/>
+			<stat name="total_cycles" value="18175782820"/>
+			<stat name="idle_cycles" value="62275254.476297"/>
+			<stat name="busy_cycles" value="18113507565.523705"/>
+			<stat name="ROB_reads" value="0"/>
+			<stat name="ROB_writes" value="0"/>
+			<stat name="rename_accesses" value="0"/>
+			<stat name="fp_rename_accesses" value="0"/>
+			<stat name="inst_window_reads" value="0"/>
+			<stat name="inst_window_writes" value="0"/>
+			<stat name="inst_window_wakeup_access" value="0"/>
+			<stat name="fp_inst_window_reads" value="0"/>
+			<stat name="fp_inst_window_writes" value="0"/>
+			<stat name="fp_inst_window_wakeup_access" value="0"/>
+			<stat name="int_regfile_reads" value="4568450658"/>
+			<stat name="float_regfile_reads" value="838337289"/>
+			<stat name="int_regfile_writes" value="1956445750"/>
+			<stat name="float_regfile_writes" value="585984930"/>
+			<stat name="function_calls" value="104926768"/>
+			<stat name="context_switches" value="836"/>
+			<stat name="ialu_accesses" value="2749593917"/>
+			<stat name="fpu_accesses" value="725398362"/>
+			<stat name="mul_accesses" value="0"/>
+			<stat name="cdb_alu_accesses" value="2749593917"/>
+			<stat name="cdb_mul_accesses" value="0"/>
+			<stat name="cdb_fpu_accesses" value="725398362"/>
+			<stat name="IFU_duty_cycle" value="0.5"/>
+			<stat name="LSU_duty_cycle" value="0.25"/>
+			<stat name="MemManU_I_duty_cycle" value="0.5"/>
+			<stat name="MemManU_D_duty_cycle" value="0.25"/>
+			<stat name="ALU_duty_cycle" value="0.9"/>
+			<stat name="MUL_duty_cycle" value="0"/>
+			<stat name="FPU_duty_cycle" value="0.6"/>
+			<stat name="ALU_cdb_duty_cycle" value="0.9"/>
+			<stat name="MUL_cdb_duty_cycle" value="0"/>
+			<stat name="FPU_cdb_duty_cycle" value="0.6"/>
+			<component id="system.core3.predictor" name="PBT">
+				<param name="local_predictor_size" value="10,3"/>
+				<param name="local_predictor_entries" value="1024"/>
+				<param name="global_predictor_entries" value="4096"/>
+				<param name="global_predictor_bits" value="2"/>
+				<param name="chooser_predictor_entries" value="4096"/>
+				<param name="chooser_predictor_bits" value="2"/>
+			</component>
+			<component id="system.core3.itlb" name="itlb">
+				<param name="number_entries" value="48"/>
+				<stat name="total_accesses" value="2048442052"/>
+				<stat name="total_misses" value="640"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core3.dtlb" name="dtlb">
+				<param name="number_entries" value="64"/>
+				<stat name="read_accesses" value="651613651"/>
+				<stat name="write_accesses" value="449795805"/>
+				<stat name="read_misses" value="9437"/>
+				<stat name="write_misses" value="1429"/>
+				<stat name="conflicts" value="0"/>
+			</component>
+			<component id="system.core3.dcache" name="dcache">
+				<param name="BTB_config" value="65536,2,2,1,3,3"/>
+				<param name="read_accesses" value="655330610"/>
+				<param name="write_accesses" value="442545823"/>
+			</component>
+			<component id="system.core3.BTB" name="BTB">
+				<param name="BTB_config" value="6144,4,2,1,1,3"/>
+				<param name="read_accesses" value="0"/>
+				<param name="write_accesses" value="0"/>
+			</component>
+		</component>
+		<component id="system.L20" name="L20">
+			<!-- all the buffer related are optional -->
+				<param name="L2_config" value="2097152,64,8,1, 15,23, 64,0"/>
+				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
+				<param name="buffer_sizes" value="16, 16, 16, 16"/>
+				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
+				<param name="clockrate" value="1400"/>
+				<param name="ports" value="1,1,1"/>
+				<!-- number of r, w, and rw ports -->
+				<param name="device_type" value="0"/>
+				<stat name="read_accesses" value="2871324"/>
+				<stat name="write_accesses" value="2750440"/>
+				<stat name="read_misses" value="0"/>
+				<stat name="write_misses" value="0"/>
+				<stat name="conflicts" value="0"/>	
+			    <stat name="duty_cycle" value="1"/>	
+		</component>
+		<component id="system.L21" name="L21">
+			<!-- all the buffer related are optional -->
+				<param name="L2_config" value="2097152,64,8,1, 15,23, 64,0"/>
+				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
+				<param name="buffer_sizes" value="16, 16, 16, 16"/>
+				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
+				<param name="clockrate" value="1400"/>
+				<param name="ports" value="1,1,1"/>
+				<!-- number of r, w, and rw ports -->
+				<param name="device_type" value="0"/>
+				<stat name="read_accesses" value="3197551"/>
+				<stat name="write_accesses" value="3125890"/>
+				<stat name="read_misses" value="0"/>
+				<stat name="write_misses" value="0"/>
+				<stat name="conflicts" value="0"/>	
+			    <stat name="duty_cycle" value="1"/>	
+		</component>
+		<component id="system.L22" name="L22">
+			<!-- all the buffer related are optional -->
+				<param name="L2_config" value="2097152,64,8,1, 15,23, 64,0"/>
+				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
+				<param name="buffer_sizes" value="16, 16, 16, 16"/>
+				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
+				<param name="clockrate" value="1400"/>
+				<param name="ports" value="1,1,1"/>
+				<!-- number of r, w, and rw ports -->
+				<param name="device_type" value="0"/>
+				<stat name="read_accesses" value="5477192"/>
+				<stat name="write_accesses" value="5352297"/>
+				<stat name="read_misses" value="0"/>
+				<stat name="write_misses" value="0"/>
+				<stat name="conflicts" value="0"/>	
+			    <stat name="duty_cycle" value="1"/>	
+		</component>
+		<component id="system.L23" name="L23">
+			<!-- all the buffer related are optional -->
+				<param name="L2_config" value="2097152,64,8,1, 15,23, 64,0"/>
+				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
+				<param name="buffer_sizes" value="16, 16, 16, 16"/>
+				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
+				<param name="clockrate" value="1400"/>
+				<param name="ports" value="1,1,1"/>
+				<!-- number of r, w, and rw ports -->
+				<param name="device_type" value="0"/>
+				<stat name="read_accesses" value="4722410"/>
+				<stat name="write_accesses" value="4332789"/>
+				<stat name="read_misses" value="0"/>
+				<stat name="write_misses" value="0"/>
+				<stat name="conflicts" value="0"/>	
+			    <stat name="duty_cycle" value="1"/>	
+		</component>
+		<component id="system.mem" name="mem">
+			<param name="mem_tech_node" value="32"/>
+			<param name="device_clock" value="200"/>
+			<param name="peak_transfer_rate" value="6400"/>
+			<param name="internal_prefetch_of_DRAM_chip" value="4"/>
+			<param name="capacity_per_channel" value="4096"/>
+			<param name="number_ranks" value="2"/>
+			<param name="num_banks_of_DRAM_chip" value="8"/>
+			<param name="Block_width_of_DRAM_chip" value="64"/>
+			<param name="output_width_of_DRAM_chip" value="8"/>
+			<param name="page_size_of_DRAM_chip" value="8"/>
+			<param name="burstlength_of_DRAM_chip" value="8"/>
+			<stat name="memory_accesses" value="0"/>
+			<stat name="memory_reads" value="0"/>
+			<stat name="memory_writes" value="0"/>
+		</component>
+		<component id="system.mc" name="mc">
+			<param name="mc_clock" value="800"/>
+			<param name="peak_transfer_rate" value="1600"/>
+			<param name="llc_line_length" value="16"/>
+			<param name="number_mcs" value="1"/>
+			<param name="memory_channels_per_mc" value="2"/>
+			<param name="number_ranks" value="2"/>
+			<param name="req_window_size_per_channel" value="32"/>
+			<param name="IO_buffer_size_per_channel" value="32"/>
+			<param name="databus_width" value="32"/>
+			<param name="addressbus_width" value="32"/>
+			<stat name="memory_accesses" value="0"/>
+			<stat name="memory_reads" value="0"/>
+			<stat name="memory_writes" value="0"/>
+		</component>
+		<component id="system.niu" name="niu">
+			<!-- On chip 10Gb Ethernet NIC, including XAUI Phy and MAC controller  -->
+			<!-- For a minimum IP packet size of 84B at 10Gb/s, a new packet arrives every 67.2ns. 
+				 the low bound of clock rate of a 10Gb MAC is 150Mhz -->
+			<param name="type" value="0"/> <!-- 1: low power; 0 high performance -->
+			<param name="clockrate" value="350"/>
+			<param name="number_units" value="2"/> <!-- unlike PCIe and memory controllers, each Ethernet controller only have one port -->
+			<stat name="duty_cycle" value="1.0"/> <!-- achievable max load <= 1.0 -->
+			<stat name="total_load_perc" value="0.7"/> <!-- ratio of total achived load to total achivable bandwidth  -->
+			<!-- McPAT does not track individual nic, instead, it takes the total accesses and calculate 
+			the average power per nic or per channel. This is sufficent for most application. -->  			
+		</component>
+<!--**********************************************************************-->
+		<component id="system.pcie" name="pcie">
+			<!-- On chip PCIe controller, including Phy-->
+			<!-- For a minimum PCIe packet size of 84B at 8Gb/s per lane (PCIe 3.0), a new packet arrives every 84ns. 
+				 the low bound of clock rate of a PCIe per lane logic is 120Mhz -->
+			<param name="type" value="0"/> <!-- 1: low power; 0 high performance -->
+			<param name="withPHY" value="1"/>
+			<param name="clockrate" value="350"/>
+			<param name="number_units" value="1"/>
+			<param name="num_channels" value="8"/> <!-- 2 ,4 ,8 ,16 ,32 -->
+			<stat name="duty_cycle" value="1.0"/> <!-- achievable max load <= 1.0 -->
+			<stat name="total_load_perc" value="0.7"/> <!-- Percentage of total achived load to total achivable bandwidth  -->
+			<!-- McPAT does not track individual pcie controllers, instead, it takes the total accesses and calculate 
+			the average power per pcie controller or per channel. This is sufficent for most application. -->  			
+		</component>
+<!--**********************************************************************-->
+		<component id="system.flashc" name="flashc">
+		    <param name="number_flashcs" value="0"/>
+			<param name="type" value="1"/> <!-- 1: low power; 0 high performance -->
+            		<param name="withPHY" value="1"/>
+			<param name="peak_transfer_rate" value="200"/><!--Per controller sustainable reak rate MB/S -->
+			<stat name="duty_cycle" value="1.0"/> <!-- achievable max load <= 1.0 -->
+			<stat name="total_load_perc" value="0.7"/> <!-- Percentage of total achived load to total achivable bandwidth  -->
+			<!-- McPAT does not track individual flash controller, instead, it takes the total accesses and calculate 
+			the average power per fc or per channel. This is sufficent for most application -->  			
+		</component>
+	</component>
+</component>

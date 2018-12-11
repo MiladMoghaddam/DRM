@@ -1,0 +1,5 @@
+build/ALPHA/gem5.opt configs/example/fs_DRM.py  --script=run_scripts/blackscholes_16c_simsmall.rcS --num-cpus=16 --num-dir=16 --caches --l2cache --num-l2caches=16 --ruby --garnet=fixed --topology=Mesh --mesh-row=4 --kernel=/home/milad/gem5/full_system_images_ALPHA/binaries/vmlinux_2.6.27-gcc_4.3.4 --disk-image=/home/milad/gem5/full_system_images_ALPHA/disks/linux-parsec-2-1-m5-with-test-inputs.img
+
+
+build/ALPHA/gem5.opt configs/example/fs_DRM.py  --script=run_scripts/bodytrack_16c_simsmall.rcS --num-cpus=16 --num-dir=16 --caches --l2cache --num-l2caches=16 --ruby --garnet=fixed --topology=Mesh --mesh-row=4 --kernel=/home/milad/gem5/full_system_images_ALPHA/binaries/vmlinux_2.6.27-gcc_4.3.4 --disk-image=/home/milad/gem5/full_system_images_ALPHA/disks/linux-parsec-2-1-m5-with-test-inputs.img
+

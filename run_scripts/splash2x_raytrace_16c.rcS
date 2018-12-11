@@ -1,0 +1,12 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/raytrace
+echo "Running raytrace now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./raytrace -s -p16 -a8 teapot.env
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "raytrace Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 switchcpu
+/sbin/m5 exit

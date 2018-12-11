@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 04_l2_left | Total failures: 6189 | Failure percentage: 6.1890
+Block name: 04_l2_right | Total failures: 8945 | Failure percentage: 8.9450
+Block name: 04_l2_bottom | Total failures: 66183 | Failure percentage: 66.1830
+Block name: 04_router | Total failures: 16511 | Failure percentage: 16.5110
+Block name: 04_icache | Total failures: 571 | Failure percentage: 0.5710
+Block name: 04_dcache | Total failures: 702 | Failure percentage: 0.7020
+Block name: 04_branchpred | Total failures: 3 | Failure percentage: 0.0030
+Block name: 04_pc | Total failures: 42 | Failure percentage: 0.0420
+Block name: 04_mbox | Total failures: 44 | Failure percentage: 0.0440
+Block name: 04_dtb1 | Total failures: 56 | Failure percentage: 0.0560
+Block name: 04_dtb2 | Total failures: 51 | Failure percentage: 0.0510
+Block name: 04_rbroadcast | Total failures: 161 | Failure percentage: 0.1610
+Block name: 04_itb | Total failures: 14 | Failure percentage: 0.0140
+Block name: 04_intexec1 | Total failures: 6 | Failure percentage: 0.0060
+Block name: 04_intexec2 | Total failures: 34 | Failure percentage: 0.0340
+Block name: 04_intexec3 | Total failures: 33 | Failure percentage: 0.0330
+Block name: 04_intexec4 | Total failures: 11 | Failure percentage: 0.0110
+Block name: 04_rfile1 | Total failures: 33 | Failure percentage: 0.0330
+Block name: 04_rfile2 | Total failures: 30 | Failure percentage: 0.0300
+Block name: 04_intmap | Total failures: 52 | Failure percentage: 0.0520
+Block name: 04_intq1 | Total failures: 7 | Failure percentage: 0.0070
+Block name: 04_intq2 | Total failures: 13 | Failure percentage: 0.0130
+Block name: 04_intq3 | Total failures: 21 | Failure percentage: 0.0210
+Block name: 04_l2int | Total failures: 70 | Failure percentage: 0.0700
+Block name: 04_ldst1 | Total failures: 39 | Failure percentage: 0.0390
+Block name: 04_ldst2 | Total failures: 27 | Failure percentage: 0.0270
+Block name: 04_fpmap | Total failures: 41 | Failure percentage: 0.0410
+Block name: 04_fpq | Total failures: 28 | Failure percentage: 0.0280
+Block name: 04_fpmul | Total failures: 27 | Failure percentage: 0.0270
+Block name: 04_fpreg | Total failures: 18 | Failure percentage: 0.0180
+Block name: 04_fpadd | Total failures: 25 | Failure percentage: 0.0250
+Block name: 04_fpdiv | Total failures: 13 | Failure percentage: 0.0130
+SoC final MTTF: 2.478785e-03

@@ -1,0 +1,34 @@
+Final statistics:
+Block name: 15_l2_left | Total failures: 7048 | Failure percentage: 7.0480
+Block name: 15_l2_right | Total failures: 5842 | Failure percentage: 5.8420
+Block name: 15_l2_bottom | Total failures: 72810 | Failure percentage: 72.8100
+Block name: 15_router | Total failures: 12523 | Failure percentage: 12.5230
+Block name: 15_icache | Total failures: 599 | Failure percentage: 0.5990
+Block name: 15_dcache | Total failures: 510 | Failure percentage: 0.5100
+Block name: 15_branchpred | Total failures: 2 | Failure percentage: 0.0020
+Block name: 15_pc | Total failures: 34 | Failure percentage: 0.0340
+Block name: 15_mbox | Total failures: 63 | Failure percentage: 0.0630
+Block name: 15_dtb1 | Total failures: 41 | Failure percentage: 0.0410
+Block name: 15_dtb2 | Total failures: 35 | Failure percentage: 0.0350
+Block name: 15_rbroadcast | Total failures: 121 | Failure percentage: 0.1210
+Block name: 15_itb | Total failures: 13 | Failure percentage: 0.0130
+Block name: 15_intexec1 | Total failures: 6 | Failure percentage: 0.0060
+Block name: 15_intexec2 | Total failures: 15 | Failure percentage: 0.0150
+Block name: 15_intexec3 | Total failures: 21 | Failure percentage: 0.0210
+Block name: 15_intexec4 | Total failures: 11 | Failure percentage: 0.0110
+Block name: 15_rfile1 | Total failures: 13 | Failure percentage: 0.0130
+Block name: 15_rfile2 | Total failures: 10 | Failure percentage: 0.0100
+Block name: 15_intmap | Total failures: 24 | Failure percentage: 0.0240
+Block name: 15_intq1 | Total failures: 2 | Failure percentage: 0.0020
+Block name: 15_intq2 | Total failures: 7 | Failure percentage: 0.0070
+Block name: 15_intq3 | Total failures: 19 | Failure percentage: 0.0190
+Block name: 15_l2int | Total failures: 49 | Failure percentage: 0.0490
+Block name: 15_ldst1 | Total failures: 18 | Failure percentage: 0.0180
+Block name: 15_ldst2 | Total failures: 15 | Failure percentage: 0.0150
+Block name: 15_fpmap | Total failures: 33 | Failure percentage: 0.0330
+Block name: 15_fpq | Total failures: 38 | Failure percentage: 0.0380
+Block name: 15_fpmul | Total failures: 24 | Failure percentage: 0.0240
+Block name: 15_fpreg | Total failures: 29 | Failure percentage: 0.0290
+Block name: 15_fpadd | Total failures: 12 | Failure percentage: 0.0120
+Block name: 15_fpdiv | Total failures: 13 | Failure percentage: 0.0130
+SoC final MTTF: 3.005885e-03

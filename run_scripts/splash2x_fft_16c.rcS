@@ -1,0 +1,12 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/fft
+echo "Running fft now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./fft -m20 -p16
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "fft Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 switchcpu
+/sbin/m5 exit

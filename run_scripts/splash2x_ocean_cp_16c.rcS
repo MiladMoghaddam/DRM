@@ -1,0 +1,12 @@
+#!/bin/sh
+cd benchmarks/splash2x_benchmarks/ocean_cp
+echo "Running ocean_cp now..."
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+./ocean_cp -n514 -p16 -e1e-07 -r20000 -t28800
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+echo "ocean_cp Finished, Exiting Script ..."
+#Gracefully exit M5
+/sbin/m5 switchcpu
+/sbin/m5 exit
