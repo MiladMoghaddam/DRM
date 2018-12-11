@@ -17,8 +17,11 @@ For more information please take a look at the following papers:
     Many-Core Computing (DMCC), 2015
 -------------------------------------------------------------------------------------
 Developed by: Milad Ghorbani Moghaddam, Dr. Cristinel Ababei
+
 milad.ghorbanimoghaddam@marquette.edu
+
 cristinel.ababei@marquette.edu
+
 Marquette University
 
 -------------------------------------------------------------------------------------
