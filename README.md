@@ -16,12 +16,12 @@ For more information please take a look at the following papers:
     reliability management for chip multiprocessors,” IEEE Int. Workshop on Dependable
     Many-Core Computing (DMCC), 2015
 -------------------------------------------------------------------------------------
-######  Developed by: Milad Ghorbani Moghaddam, Dr. Cristinel Ababei  ##############
-##################### milad.ghorbanimoghaddam@marquette.edu ########################
-######################## cristinel.ababei@marquette.edu ############################
-############################  Marquette University #################################
--------------------------------------------------------------------------------------
+Developed by: Milad Ghorbani Moghaddam, Dr. Cristinel Ababei
+milad.ghorbanimoghaddam@marquette.edu
+cristinel.ababei@marquette.edu
+Marquette University
 
+-------------------------------------------------------------------------------------
 This tool is developed on top of the gem5 simulator. The main directory here contains
  all the codes and stuff needed for running our proposed DRM on gem5.
 Before building the gem5 with rubby (gem5 files exists here), make sure to make the 
@@ -49,4 +49,3 @@ Setting the DVFS_Technique=1 or Thread_Migration_Technique=1 starts the DRM proc
  you can check the results in DRM/ file. info shows the overal information about the
  whole process. if you want to have detailed information you can check inside
  the DRM/interval_* to see plenty of information about the run.
--------------------------------------------------------------------------------------
